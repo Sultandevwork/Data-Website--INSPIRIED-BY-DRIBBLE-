@@ -1,0 +1,415 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  font-size: 0.8rem;
+  text-wrap: wrap;
+  background-color: rgb(184, 224, 232);
+}
+
+/* START NAVBAR */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+  position: sticky;
+  top: 30px;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 50px;
+}
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 2rem;
+  max-width: 1600px;
+}
+.logo {
+  font-size: 1.3rem;
+  display: flex;
+  text-decoration: none;
+  color: black;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navbar-container .navbar-menu {
+  list-style-type: none;
+  display: flex;
+  text-align: center;
+  gap: 1.3rem;
+  padding-left: 22px;
+  cursor: pointer;
+}
+.navbar-container .navbar-menu li a {
+  text-decoration: none;
+  align-items: center;
+  font-weight: 500;
+  padding: 3px;
+  border: 2px solid transparent;
+  transition: all 0.7s ease;
+  white-space: nowrap;
+  justify-content: start;
+  color: black;
+  font-size: 1rem;
+}
+.live {
+  background-color: rgb(0, 0, 0);
+  padding: 6px 20px !important;
+  border-radius: 13px;
+  color: white !important;
+}
+.detail {
+  display: flex;
+  position: relative;
+  left: 50px;
+  gap: 0.4em;
+  font-size: 1.1rem;
+  flex-wrap: wrap;
+}
+#i-bg {
+  background-color: rgb(182, 167, 167);
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  color: black;
+  cursor: pointer;
+}
+i {
+  cursor: pointer;
+}
+.text {
+  display: flex;
+  position: absolute;
+  right: 90px;
+  top: 10px;
+  text-align: center;
+  font-size: 1rem;
+}
+#usp {
+  position: relative;
+  bottom: 10px;
+}
+.mail {
+  display: flex;
+  position: relative;
+  top: 9px;
+  font-size: 0.8rem;
+  right: 4px;
+}
+.navbar-toggle {
+  background: transparent;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  display: none;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: black;
+  transition: all 0.3 ease;
+}
+/* END NAVBAR */
+
+/* START NAVBAR RESPONSIVNESS */
+
+@media (max-width: 1250px) {
+  .mail {
+    display: none;
+  }
+  .text {
+    display: none;
+  }
+  .detail {
+    display: none;
+  }
+}
+@media (max-width: 890px) {
+  .navbar-container .navbar-menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.4rem;
+    position: absolute;
+    height: 100vh;
+    width: 250px;
+    top: 0;
+    right: 0;
+    padding: 5rem 1.5rem;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  }
+  .navbar-container .navbar-menu.active {
+    display: flex;
+  }
+  .navbar-toggle {
+    display: block;
+    z-index: 999;
+  }
+  .navbar-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navbar-toggle.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .navbar-toggle.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .navbar-container {
+    padding: 3rem;
+  }
+  .logo {
+    display: initial;
+  }
+  .live {
+    background-color: rgb(235, 232, 232) !important;
+    padding: 0px !important;
+    border-radius: 0 !important;
+    color: black !important;
+  }
+  #actives {
+    background-color: black !important;
+    padding: 4px !important;
+    color: white !important;
+    border-radius: 9px !important;
+  }
+}
+
+/* END NAVBAR RESPONSIVNESS */
+
+/* SART HEADER AREA */
+
+.textq {
+  padding: 50px 30px;
+  align-items: center;
+}
+
+.textq h3 {
+  color: red;
+  font-size: 2rem;
+  font-weight: 560;
+}
+.textq p {
+  padding: 2px 0;
+}
+.textq .options {
+  display: flex;
+  text-align: center;
+  position: absolute;
+  right: 120px;
+  top: 120px;
+  gap: 0.4rem;
+}
+.options {
+  align-items: center;
+}
+#search {
+  padding: 6px 15px;
+  border-radius: 20px;
+  border: 2px solid whitesmoke;
+  position: relative;
+  left: 80px;
+}
+#search::placeholder {
+  padding: 0 13px;
+  color: rgb(66, 64, 64);
+}
+#search-icon {
+  position: absolute;
+  top: 11px;
+  left: 89px;
+  font-size: 0.8rem;
+  color: rgb(117, 117, 117);
+  z-index: 999;
+}
+#Calender {
+  padding: 6px 15px;
+  border-radius: 20px;
+  border: 2px solid whitesmoke;
+  margin-left: 10px;
+  position: relative;
+  left: 80px;
+}
+#print-icon {
+  padding: 6px 15px;
+  background: white;
+  border-radius: 20px;
+  color: rgb(66, 66, 212);
+  position: relative;
+  left: 90px;
+}
+.blue {
+  padding: 10px 15px;
+  background: rgb(62, 62, 235);
+  border-radius: 20px;
+  color: white;
+  position: relative;
+  left: 100px;
+  font-weight: bold;
+  border: 1.5px solid black;
+}
+/* END  HEADER SECTION */
+
+/* START SECOND AREA  */
+.flexed-header {
+  display: flex;
+  align-items: flex-start;
+  text-align: start;
+  margin: 0 15px;
+  height: 100%;
+  gap: 0.3rem;
+}
+.flex-box {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 40px;
+  align-content: start;
+}
+.flex-box h5 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+    color: rgb(54, 52, 52);
+}
+.flex-box h3 {
+  font-size: 2.1rem;
+  margin-bottom: 10px;
+}
+.flex-box .green {
+  background: rgb(95, 243, 95);
+  border-radius: 10px;
+  padding: 1px 15px;
+}
+.flex-box .red {
+  background: rgb(242, 157, 184);
+  border-radius: 10px;
+  padding: 1px 15px;
+  color: rgb(254, 4, 71);
+}
+/* FOR THE LAST CARD */
+.flex-boxd {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 48px;
+  align-content: start;
+}
+.flex-boxd h5 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: rgb(54, 52, 52);
+}
+.flex-boxd h3 {
+  font-size: 2.1rem;
+  margin-bottom: 10px;
+}
+/* END IT HERE */
+.fa-arrow-trend-up {
+  position: relative;
+  top: 63px;
+  left: 4px;
+  font-size: 0.5rem;
+}
+/* END SECOND AREA  */
+
+/* START THIRD AREA  */
+.flexes {
+  margin: 15px 20px;
+  display: flex;
+  gap: 0.4rem;
+}
+.mini-flex {
+  background: white;
+  padding: 10px 20px;
+  border-radius: 24px;
+  font-size: 1.2rem;
+  font-family: Arial;
+}
+.mini-flex #blue {
+  color: blue;
+}
+
+/* START THIRD AREA  */
+
+/* START DATA AREA */
+
+.Data {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  align-items: center;
+  gap: 16rem;
+}
+.card-1 {
+  margin: 0px 10px;
+  background-color: white;
+  padding: 25px 100px;
+  padding-left: 15px;
+  border-radius: 20px;
+  align-items: center;
+}
+.card-1 h2 {
+  font-size: 1.4rem;
+  align-items: center;
+  position: relative;
+  bottom: 5px;
+  left: 0px;
+}
+.pro1 h6 {
+  font-size: 1.2rem;
+  justify-content: start;
+}
+.pro1 {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: flex-end;
+}
+
+progress {
+ padding: 20px 200px;
+ display: inline-flex;
+ 
+}
+.num {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  position: relative;
+  left: 90px;
+}
+.note {
+  padding: 10px;
+  background: white;
+  border-radius: 12px;
+  max-width: 130px;
+  position: absolute;
+  top: 215px;
+  left: 400px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.card-2 {
+  position: absolute;
+  background-color: white;
+  padding: 100px;
+  left: 590px;
+}
+/* END DATA AREA */

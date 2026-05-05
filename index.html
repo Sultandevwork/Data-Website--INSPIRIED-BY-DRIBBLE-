@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- FONT LINK -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--CSS LINK -->
+    <link rel="stylesheet" href="/Css/style.css" />
+  </head>
+  <body>
+    <!-- NAVBARS BEGINNING -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a class="logo" href="index.html"
+          ><i class="fa-regular fa-face-smile"></i> DentalPro</a
+        >
+        <button class="navbar-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <ul class="navbar-menu">
+          <li><a id="actives" href="#">Overview</a></li>
+          <li><a href="#">Patients</a></li>
+          <li><a href="#">Appointments</a></li>
+          <li><a href="#">Treatments</a></li>
+          <li><a href="#">Billing</a></li>
+          <li><a class="live" href="#">Reports</a></li>
+        </ul>
+        <div class="detail">
+          <span><i class="fa fa-bell" id="i-bg" aria-hidden="true"></i></span>
+          <span><i class="fa fa-cog" id="i-bg" aria-hidden="true"></i></span>
+          <span
+            ><i class="fa fa-user-circle" id="i-bg" aria-hidden="true"></i
+          ></span>
+        </div>
+        <div class="text">Be Confidency</div>
+        <div class="mail">
+          anonynouus@gmail.com
+          <i class="fa fa-sort-desc" id="usp" aria-hidden="true"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ENDING NAVBARS  --->
+
+    <!-- START HEADER SECTION -->
+
+    <div class="textq">
+      <h3>Reports & Analytics</h3>
+      <p>Comprehensive practise performance metrics and insights</p>
+      <div class="options">
+        <span
+          ><i class="fa fa-search" id="search-icon" aria-hidden="true"></i>
+          <input type="search" name="" id="search" placeholder="Search here..."
+        /></span>
+        <select name="" id="Calender">
+          <option value="Last 6 month">Last 6 month</option>
+          <option value="Last 6 month">Last 3 month</option>
+          <option value="Last 6 month">Last 2 month</option>
+          <option value="Last 6 month">Last 1 month</option>
+        </select>
+        <span id="print-icon"
+          ><i class="fa fa-print" aria-hidden="true"></i> print</span
+        >
+        <span id="print-icon"
+          ><i class="fa fa-download" aria-hidden="true"></i> Export PDF</span
+        >
+        <span class="blue"
+          ><i class="fa fa-plus" aria-hidden="true"></i> Quick Action</span
+        >
+      </div>
+    </div>
+    <!-- END  HEADER SECTION -->
+
+    <!-- START SECOND AREA -->
+    <section class="flexed-header">
+      <div class="flex-box">
+        <h5>Total Revenue</h5>
+        <i class="fa-solid fa-arrow-trend-up"></i>
+        <h3>£332,000</h3>
+        <p><span class="green"> 15.3%</span> Vs last period</p>
+      </div>
+
+      <div class="flex-box">
+        <h5>Net Profit</h5>
+        <i class="fa-solid fa-arrow-trend-up"></i>
+        <h3>£213,200</h3>
+        <p><span class="green"> 12.8%</span> Vs last period</p>
+      </div>
+
+      <div class="flex-box">
+        <h5>No-Show-Rate</h5>
+        <i class="fa-solid fa-arrow-trend-up"></i>
+        <h3>5.9%</h3>
+        <p><span class="red">2.8%</span> Vs last period</p>
+      </div>
+
+      <div class="flex-box">
+        <h5>Insurance claims</h5>
+        <i class="fa-solid fa-arrow-trend-up"></i>
+        <h3>599</h3>
+        <p><span class="green">91%</span> Vs last period</p>
+      </div>
+      <div class="flex-boxd">
+        <h5>VAT Due</h5>
+        <h3>£8,122</h3>
+        <p>Current Month</p>
+      </div>
+    </section>
+
+    <!-- END SECOND AREA -->
+
+    <!-- START THIRD AREA -->
+    <div class="flexes">
+      <div class="mini-flex">
+        <h5>Revenue</h5>
+      </div>
+      <div class="mini-flex">
+        <h5 id="blue">Treatments</h5>
+      </div>
+      <div class="mini-flex">
+        <h5>Dentists</h5>
+      </div>
+      <div class="mini-flex">
+        <h5>No-Show</h5>
+      </div>
+      <div class="mini-flex">
+        <h5>Tax-Sumarry</h5>
+      </div>
+    </div>
+
+    <!-- END THIRD AREA -->
+
+    <!-- START DATA AREA -->
+
+    <section class="Data">
+      <div class="card-1">
+        <h2>Treatment Revenue Comparison</h2>
+        <span class="pro1">
+          <h6>Dental Cleaning</h6>
+          <progress class="p1" max="100" value="0"></progress>
+        </span>
+        <div class="pro1">
+          <h6>Fillings</h6>
+          <progress max="100" value="0"></progress>
+        </div>
+        <div class="pro1">
+          <h6>Root canals</h6>
+          <progress max="100" value="0"></progress>
+        </div>
+        <div class="pro1">
+          <h6>Crown/Bridge</h6>
+          <progress max="100" value="65"></progress>
+        </div>
+        <div class="pro1">
+          <h6>Teeth whitening</h6>
+          <progress max="100" value="0"></progress>
+        </div>
+        <div class="pro1">
+          <h6>Implants</h6>
+          <progress max="100" value="0"></progress>
+        </div>
+        <span class="num">
+          <span>00</span>
+          <span>15000</span>
+          <span>30000</span>
+          <span>45000</span>
+          <span>60000</span>
+        </span>
+        <div class="note">
+        <h5>Crown Bridge</h5>
+        <span><i></i>Revenue(£): 40500</span>
+      </div>
+      </div>
+
+      <div class="card-2">
+        <h4>Treatment Volume Distribution</h4>
+        <div class="option">
+          <input type="radio" name="option" id="Dental Cleaning">
+          <label for="Dental Cleaning">Dental Cleaning <span>245</span></label>
+        </div>
+        <div class="option">
+          <input type="radio" name="option" id="Dental Cleaning">
+          <label for="Dental Cleaning">Fillings <span>245</span></label>
+        </div>
+        <div class="option">
+          <input type="radio" name="option" id="Dental Cleaning">
+          <label for="Dental Cleaning">Root canals <span>245</span></label>
+        </div>
+        <div class="option">
+          <input type="radio" name="option" id="Dental Cleaning">
+          <label for="Dental Cleaning">Crown/Bridge <span>245</span></label>
+        </div>
+        <div class="option">
+          <input type="radio" name="option" id="Dental Cleaning">
+          <label for="Dental Cleaning">Teeth whitening <span>245</span></label>
+        </div>
+        <div class="option">
+          <input type="radio" name="option" id="Dental Cleaning">
+          <label for="Dental Cleaning">Implants <span>245</span></label>
+        </div>  
+      </div>
+    </section>
+    <!--  END DATA AREA -->
+    <script>
+      const navbarToggle = document.querySelector(".navbar-toggle");
+      const navbarMenu = document.querySelector(".navbar-menu");
+
+      navbarToggle.addEventListener("click", () => {
+        navbarToggle.classList.toggle("active");
+        navbarMenu.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
