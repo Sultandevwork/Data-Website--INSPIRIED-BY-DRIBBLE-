@@ -144,75 +144,105 @@
 
     <!-- START DATA AREA -->
 
-    <section class="Data">
-      <div class="card-1">
-        <h2>Treatment Revenue Comparison</h2>
-        <span class="pro1">
-          <h6>Dental Cleaning</h6>
-          <progress class="p1" max="100" value="0"></progress>
-        </span>
-        <div class="pro1">
-          <h6>Fillings</h6>
-          <progress max="100" value="0"></progress>
+    <div class="bent">
+      <section class="Data">
+        <div class="card-1">
+          <h2>Treatment Revenue Comparison</h2>
+          <span class="pro1">
+            <h6>Dental Cleaning</h6>
+            <progress class="p1" max="100" value="0"></progress>
+          </span>
+          <div class="pro1">
+            <h6>Fillings</h6>
+            <progress max="100" value="0"></progress>
+          </div>
+          <div class="pro1">
+            <h6>Root canals</h6>
+            <progress max="100" value="0"></progress>
+          </div>
+          <div class="pro1">
+            <h6>Crown/Bridge</h6>
+            <progress max="100" value="65"></progress>
+          </div>
+          <div class="pro1">
+            <h6>Teeth whitening</h6>
+            <progress max="100" value="0"></progress>
+          </div>
+          <div class="pro1">
+            <h6>Implants</h6>
+            <progress max="100" value="0"></progress>
+          </div>
+          <span class="num">
+            <span>00</span>
+            <span>15000</span>
+            <span>30000</span>
+            <span>45000</span>
+            <span>60000</span>
+          </span>
+          <div class="note">
+            <h5>Crown Bridge</h5>
+            <span><i></i>Revenue(£): 40500</span>
+          </div>
         </div>
-        <div class="pro1">
-          <h6>Root canals</h6>
-          <progress max="100" value="0"></progress>
-        </div>
-        <div class="pro1">
-          <h6>Crown/Bridge</h6>
-          <progress max="100" value="65"></progress>
-        </div>
-        <div class="pro1">
-          <h6>Teeth whitening</h6>
-          <progress max="100" value="0"></progress>
-        </div>
-        <div class="pro1">
-          <h6>Implants</h6>
-          <progress max="100" value="0"></progress>
-        </div>
-        <span class="num">
-          <span>00</span>
-          <span>15000</span>
-          <span>30000</span>
-          <span>45000</span>
-          <span>60000</span>
-        </span>
-        <div class="note">
-        <h5>Crown Bridge</h5>
-        <span><i></i>Revenue(£): 40500</span>
-      </div>
-      </div>
+      </section>
 
       <div class="card-2">
-        <h4>Treatment Volume Distribution</h4>
-        <div class="option">
-          <input type="radio" name="option" id="Dental Cleaning">
-          <label for="Dental Cleaning">Dental Cleaning <span>245</span></label>
+        <h2>Treatment Volume Distribution</h2>
+        <br /><br />
+        <div class="box">
+          <!-- IST -->
+          <input type="radio" name="option" id="inp" />
+          <label for="option">Dental Cleaning <span>245</span></label>
+          <br /><br />
+          <!-- SECOND -->
+          <input type="radio" name="option" id="inp" />
+          <label for="option">Fillings: <span>189</span></label> <br /><br />
+          <!-- THIRD -->
+          <input type="radio" name="option" id="" />
+          <label for="option">Root Canals <span>123</span></label> <br /><br />
+          <!-- FOURTH -->
+          <input type="radio" name="option" id="" />
+          <label for="option">Crown/Bridge <span>78</span></label> <br /><br />
+          <!-- FIFTH -->
+          <input type="radio" name="option" id="" />
+          <label for="option">Teeth Whitening <span>67</span></label>
+          <br /><br />
+          <!-- SIXTH -->
+          <input type="radio" name="option" id="" />
+          <label for="option">Implants <span>56</span></label> <br /><br />
+          <!-- SEVENTH -->
+          <input type="radio" name="option" id="" />
+          <label for="option">Orthodontics <span>45</span></label> <br /><br />
+
+          <input type="radio" name="option" id="" />
+          <label for="option">Extraction <span>34</span></label> <br /><br />
         </div>
-        <div class="option">
-          <input type="radio" name="option" id="Dental Cleaning">
-          <label for="Dental Cleaning">Fillings <span>245</span></label>
+        <div class="img">
+          <img
+            src="/image/Handsome Black Male Office Employee Working On Laptop Computer, Closeup Shot.jpg"
+            alt=""
+            style="width: 300px"
+          />
         </div>
-        <div class="option">
-          <input type="radio" name="option" id="Dental Cleaning">
-          <label for="Dental Cleaning">Root canals <span>245</span></label>
-        </div>
-        <div class="option">
-          <input type="radio" name="option" id="Dental Cleaning">
-          <label for="Dental Cleaning">Crown/Bridge <span>245</span></label>
-        </div>
-        <div class="option">
-          <input type="radio" name="option" id="Dental Cleaning">
-          <label for="Dental Cleaning">Teeth whitening <span>245</span></label>
-        </div>
-        <div class="option">
-          <input type="radio" name="option" id="Dental Cleaning">
-          <label for="Dental Cleaning">Implants <span>245</span></label>
-        </div>  
       </div>
-    </section>
+    </div>
     <!--  END DATA AREA -->
+    <br />
+    <!-- START FOOTER AREA -->
+    <footer>
+      <header>
+        <h2>Detailed Treatment Performance</h2>
+      </header>
+      <div class="flex-foot">
+        <p>Treatment Type</p>
+        <p>Count</p>
+        <p>Revenue</p>
+        <p>Avg Price</p>
+        <p>Growth</p>
+        <p>% of Total</p>
+      </div>
+    </footer>
+    <!--  END FOOTER AREA -->
     <script>
       const navbarToggle = document.querySelector(".navbar-toggle");
       const navbarMenu = document.querySelector(".navbar-menu");
